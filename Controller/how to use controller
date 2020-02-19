@@ -1,0 +1,94 @@
+
+
+import 'package:flutter/material.dart';
+
+
+class Test extends StatelessWidget {
+  
+  @override
+  Widget build(BuildContext context) {
+     return MaterialApp(
+      title: 'Inherited Widgets Demo',
+      theme: new ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: TestPage(title: 'Flutter Demo Home Page'),
+     );
+}}
+
+class TestPage extends StatefulWidget {
+  TestPage({Key key, this.title}) : super(key: key);
+  final String title;
+  
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<TestPage> {
+final mircontroller =new TextEditingController();
+final srijoncontroller = new TextEditingController();
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+    
+      backgroundColor: Color(0xFF55b9f3),
+body: 
+Center(child:
+  Column(children: <Widget>[
+    Container(height:100),
+Text("enter name",style:TextStyle(fontSize:25, color:Colors.white,),),
+TextField(controller: mircontroller,),
+TextField(controller: srijoncontroller,),
+RaisedButton(onPressed: (){
+var kajhoiche =mircontroller.text;
+var whatname = srijoncontroller.text;
+print("hocche to $kajhoiche");
+Navigator.push(context,MaterialPageRoute(builder:(context)=>New(amarname:kajhoiche,vainame:whatname,),));
+},
+child:Text("go"),
+),
+  ],
+),
+
+),
+);
+
+  }}
+
+// Inherited widget for managing a name
+
+
+
+
+
+
+
+class New extends StatelessWidget {
+  
+  final amarname;
+  final vainame;
+New({@required this.amarname,
+@required this.vainame,
+});
+  
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+     backgroundColor: Color(0xFF55b9f3),
+     
+body: 
+Column(
+  children: <Widget>[
+    Container(height:100,
+    
+    ),
+    Text(" shu shagotom $amarname "),
+    Text(" ebong shu shagotom  $vainame"),
+  ],
+),
+);
+
+
+  }}
+
+// Inherited widget for managing a name
