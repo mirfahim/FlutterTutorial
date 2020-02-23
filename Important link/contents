@@ -6,3 +6,7 @@
 
 4. https://blog.codeminer42.com/build-your-first-app-with-flutter-getting-data-from-api-c9fb4c2a6812/ (Good Json Tutorial)
 
+5. //Date format: https://pub.dartlang.org/packages/intl#-readme-tab-
+            //DateFormat: https://www.dartdocs.org/documentation/intl/0.15.1/intl/DateFormat-class.html
+            //https://stackoverflow.com/questions/45357520/dart-converting-milliseconds-since-epoch-unix-timestamp-into-human-readable
+            (Date Format from json)
