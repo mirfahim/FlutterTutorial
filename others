@@ -1,0 +1,8 @@
+setup two pc locally
+
+
+step one - go to sytem 32 then drivers then etc.
+step two - run your notepad as administrative.
+step three - copy the host files from host .
+
+192.168.10.204	ibilling.local then save
